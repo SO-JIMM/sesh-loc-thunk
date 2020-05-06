@@ -1,7 +1,11 @@
 import { combineReducers } from 'redux'
 
-import todosReducer from './todos/todo.slice'
+import patientReducer from './patient/patient.slice'
+import userReducer from './user/user.slice'
+import sessionReducer from './session/session.slice'
 
 export default combineReducers({
-  todos: todosReducer
+  patient: patientReducer,
+  user: userReducer,
+  session: sessionReducer,
 })
